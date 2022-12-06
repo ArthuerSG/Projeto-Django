@@ -1,7 +1,7 @@
 
 ### Aula 04 ###
-- Estruturar o site nem que seja com um desenho as diferentes telas
 - Primeiro sempre fazer o planejamento do site
+- Estruturar o site nem que seja com um desenho as diferentes telas
 - Pensar as estruturas, as imagens, etc...
 - Só para ter uma referencia
 
