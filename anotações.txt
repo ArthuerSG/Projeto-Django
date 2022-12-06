@@ -39,17 +39,51 @@ pedir o seu Username que você quer usar, você tambem pode por o nome do usuár
 irá pedir o email tambem e por ultimo ele irá pedir a senha
 - link para os codigos do django manage.py (https://docs.djangoproject.com/en/3.2/ref/django-admin/)
 
+### Aula 08 ###
+- Como conectar o nosso app com o nosso projeto, a primeira coisa que tem que fazer ao criar o app é istalar ele dentro dos
+aplicativos do seu projeto.
+- Você vai em (settings.py)
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+Você irá ver isso e dentro dessa pasta é só acrescentar uma linha com o mesmo nome do app que você criou
+exemplo: 'filme',
+- A segunda coisa que você tem que fazer é ir dentro do arquivo de urls.py definir qual vai ser o link que você quer
+exibir do app do filme, você tem 2 formas de adicionar o link do seu site, A primeira é que você pode gerenciar todos
+os links do seu site por meio do arquivo de urls.py do seu projeto principal, A segunda opção é você em cada um dos
+seus app criar um arquivo urls.py e dentro do arquivo principal do urls.py você incluir todos os links criados no
+seu app
+- Criar um novo arquivo no seu app criado de (urls)
+- Copiar o codigo a cima (path('blog/', include('blog.urls'))) que está como exemplo e tem que importar
+(import include)
+- E se a sua pasth não tiver nome será o link padrão criado
 
+### Aula 09 ###
+- No arquivo settings.py tem o link para alguma duvida que o próprio django já disponibiliza para a gente
+- A primeira coisa que ele faz para a gente é definir o que a gente chama de Diretorio-Base (BASE_DIR) e esse Dretorio-Base
+é o nosso caminho Base ou seja onde está o seu projeto
+- A segunda coisa que tem é o (SECRET_KEY) é uma chave de segurança do seu projeto
+- A terceira coisa é o (DEBUG = True) isso permite que toda mudança que a gente faz nos códigos se reflita dentro do
+nosso navegador
+- (ALLOWED_HOSTS = []) são os hosts que ficaram permitidos
+- (INSTALLED_APPS = []) são os apps que estão instaldos
+- (MIDDLEWARE = []) uma outra lista que fica os processos "meio de caminho" que o django faz e já trata para a gente
+- (ROOT_URLCONF = ) qual é o arquivo que tem a base de links que comando o seu site
+- (TEMPLATES = []) Tem 2 partes principais, a 1 é onde vão ficar os arquivos html e que ele tambem diz o
+local que onde vai estar os arquivos a 2 coisa que tem são as edições de contexto
+- (WSGI_APPLICATION = ) configuração de servidor
+- (DATABASES = {}) Fala qual é o banco de dados
+- (AUTH_PASSWORD_VALIDATORS = []) Fala quais são os válidadores de senha que o django vai gerenciar normalmente
+- (LANGUAGE_CODE =) A liguagem o seu administrativo por padrão a ligua é em inglês para colocar em portugues (pt-br)
+- (TIME_ZONE =)  colocar America/Sao_Paulo
+- (STATIC_URL =) Vai dizer onde vai ficar os nossos arquivos de imagens, de CSS e de JavaScript
+- (DEFAULT_AUTO_FIELD =) Aqui vai definir quais vão ser as chaves primarias das nossas tabelas do banco de dados
 
-
-
-
-
-
-
-
-
-
+### Aula 10 ###
 
 
 
