@@ -25,6 +25,20 @@ onde vai estár o nosso site))
 - Agora a primeira coisa que a gente vai fazer nesse app de filme é criar a estrura de filmes (a que a gente fez no planejamento)
 - models.py é onde será criado as tabelas do seu banco de dados
 
+### Aula 07 ###
+- Depois de ter criado nosso site e nosso app de filme, agora vamos criar um SuperUser(O usuário que manda no site, o que tem todos os "poderes" administrativos)
+- Para iniciarlizar o usuário a gente vai para o teminal e vamos pausar o nosso servido (Ctrl+c) e vamos rodar um (python manage.py migrate) sempre que você modificação
+no seu banco de dados você tem que rodar o migrate.py
+- Sempre que você quiser fazer uma modificação no arquivo do banco de dados ou seja sempre que você editar um aquivo por exemplo: models.py que é um
+arquivo que modifica o seu banco de dados você tem que ir no terminal rodar 2 codigos primeiro (python manage.py makemigrations) e depois (python manage.py migrate)
+- O usuário no django já extiste ele já vem pronto então na teoria não é preciso você criar o usuário
+- Criar um usuário não é criar uma nova tabela no banco de dados é adicionar uma nova informação o que é completamente diferente
+e não é preciso rodar o (migrete)
+- Para criar o SuperUsur (Você só vai precisar fazer isso uma vez) você tem que rodar (python manage.py createsuperuser) logo em seguida o programa irá
+pedir o seu Username que você quer usar, você tambem pode por o nome do usuário ser a mesma coisa do email, o programa
+irá pedir o email tambem e por ultimo ele irá pedir a senha
+- link para os codigos do django manage.py (https://docs.djangoproject.com/en/3.2/ref/django-admin/)
+
 
 
 
