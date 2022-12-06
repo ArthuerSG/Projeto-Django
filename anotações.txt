@@ -1,0 +1,23 @@
+
+### Aula 04 ###
+- Estruturar o site nem que seja com um desenho as diferentes telas
+- Primeiro sempre fazer o planejamento do site
+- Pensar as estruturas, as imagens, etc...
+- Só para ter uma referencia
+
+### Aula 05 ###
+- Sempre que você for criar um novo site no django, tem instalar o django (pip install django) no ambiente virtual
+e também rodar um código (django-admin startproject (colocar o nome do projeto) .
+- Com isso ele irar criar uma estrutura do seu projeto
+- wsgi.py vai gerenciar a parte do servidor
+- urls.py vai definir os links acessiveis
+- settings.py um dos arquivos mais importantes por ser ele que diz a onde o django vai procurar determinadas
+informações do seu projeto. Basicamente vai ser onde vai ficar as suas programações gerais
+- Para textar o seu projeto ver se ele tá no ar e etc... no terminal a gente vai e escreve
+(python manage.py runserver ( esse runserver irá criar um link que será acessivel só para a nossa maquina
+onde vai estár o nosso site))
+
+### Aula 06 ###
+- manage.py é a espinha dorsal do nosso projeto ou seja a parte inicial quanto você starta um projeto ele já vem
+- Quando você rodar o runserver ele já cria um banco de dados (db.sqlite3)
+- Parar criar um app você tem que ir no terminal e colocar esse código (django-admin starapp (nome do app sempre no sigular))
