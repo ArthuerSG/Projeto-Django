@@ -84,6 +84,21 @@ local que onde vai estar os arquivos a 2 coisa que tem são as edições de cont
 - (DEFAULT_AUTO_FIELD =) Aqui vai definir quais vão ser as chaves primarias das nossas tabelas do banco de dados
 
 ### Aula 10 ###
-
-
+- Dentro do models.py a gente vai criar class exemplo:(class Filme(models.Model):)
+- Você irá colocar tudo que você planejou dentro da sua class criada exemplo: Thumb =, Titulo = , etc...
+- titulo = models.CharField(max_length=100)
+- descricao = models.TextField(max_length=1000)
+- A difença entre o CharField e o TextField é que o CharField escreve uma linha só e o TextField quantas você quiser
+- Logo em seguida eem cima de tudo isso você irá criar (LISTA_CATEGORIAS = ()) com várias tuplas dentro dela exemplo:
+LISTA_CATEGORIAS = (
+    (armazenar_no_bd, aparecer_pro_usuario),
+    ("ANALISES", "Análises"),
+    (),
+)
+- categorias = models.CharField(max_lenght=15, choices=LISTA_CATEGORIAS)
+- thumb = models.ImageField(upload_to='thumb_filmes')
+- visualizacoes = models.IntegerField(default=0)
+- data_criacao = models.DateTimeField(default=timezone.now) mas para usar você tem que importa (from django.utils import timezone)
+- Depois de fazer isso tudo temos que fazer o makemigratinos no terminal porem irá dar erro ele vai pedir para
+instalar o (pip install pillow)
 
