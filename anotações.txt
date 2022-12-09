@@ -101,4 +101,29 @@ LISTA_CATEGORIAS = (
 - data_criacao = models.DateTimeField(default=timezone.now) mas para usar você tem que importa (from django.utils import timezone)
 - Depois de fazer isso tudo temos que fazer o makemigratinos no terminal porem irá dar erro ele vai pedir para
 instalar o (pip install pillow)
+- Essa tabela toda que a gente fez ainda não aparecerá no site/admin mas se você olhar no arquivo do banco de dados(db.sqlite3) estará tudo lá
+- Esse arquivo moldels.py é um dos arquivos mais importe
+- Para a tabela nova criada aparecer no site/admin é preciso
 
+### Aula 11 ###
+- Sempre que você for criar uma tabela você tem que entrar no admin.py e registrar
+- No admin.py você vai importar o arquivo modelos Exemplo: (from .models import Filme)
+- Depois você só tem que registrar o no admin Exemplo: (admin.site.register(Filme))
+- Como você não editou o seu models.py não é necessario fazer o migrate
+- No site/admin já vai estar a tabela criada
+- Para você adicionar um filme é só clicar na pasta e adiocionar
+- Para mudar a forma que o "print"(Filme object (1)) é exibido lá no model.py dentro da class criada você tem que
+definir uma função dele Exemplo:( def __str__(self):)
+- A função __str__ é uma função padrao, essa função ela diz pra cada classe do pyhton o que vai aparecer se um
+usuário der um print em algum intem dessa classe
+- Dentro dessa função você tem quer retornar ( return self.titulo)
+
+### Aula 12 ###
+- Para as imagens aparecerem você tem que configurar no settings.py
+- Só achar o STATIC_URL = Imagens staticas( Imagens que você vai subir)
+- Midias = Imagens que outros usuarios vão subir
+- Se você entrar no link que tem no settings (https://docs.djangoproject.com/en/4.1/howto/static-files/)
+ ele vai te levar para as configurações que tem que fazer
+- 1 Você tem que configurar o arquivo estaticos
+- Você vai copiar o codigo que tem lá e colar no settings
+- Depois disso você vai criar um novo diretorio com o mesmo nome arquivo que você colou que está na lista
