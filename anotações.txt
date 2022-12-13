@@ -127,3 +127,40 @@ usuário der um print em algum intem dessa classe
 - 1 Você tem que configurar o arquivo estaticos
 - Você vai copiar o codigo que tem lá e colar no settings
 - Depois disso você vai criar um novo diretorio com o mesmo nome arquivo que você colou que está na lista
+
+### Aula 13 ###
+- Para organizar mais o seu projeto seria legal você criar uma pasta dentro do "static" para cada arquivo
+- O arquivo statc são composto por CSS,JavaScript,Imagens
+- Ir para o site e copiar um outro codigo para criar um link para a imagen (+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
+- Ai você cola esse codigo no urls.py do seu projeto não o do filme, igual ele pede no site mas para ficar mais
+legal ao inves de colar logo em baixo do (urlpatterns) você pode (urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
+o urlpatterns recebe ele mesmo mais o codigo
+- Mas para isso funcionar você tem que importar os 2 caras que ele pede lá no site
+- Agora para permitir que seu usuario faça uploaded você faz basicamente a mesma coisa só que com outro codigo
+- Porem se você reparar você tem que definir as variaveis (MEDIA_URL) e (MEDIA_ROOT) que vem no codigo
+- A gente só não precisou definir a variavel statc porque já vinha definida
+- Depois de definir a variavel igual a do static é só criar uma pasta tambem (media)
+- Com isso faça rodar novamente o site e suba as imagen novamente
+- Recapitulando o que a gente fez no arquivo de settings a gente fez as configurações da pasta de media que o usuario
+sobe os arquivos e da pasta de static porque as configurações são parecidas
+
+### Aula 14 ###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
